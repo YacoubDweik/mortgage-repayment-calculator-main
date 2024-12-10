@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>
+      Frontend Mentor | Mortgage repayment calculator
+    </title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="container__main">
+        <div class="title wrapper">
+          <h1 class="container__title">
+            Mortgage Calculator
+          </h1>
+          <span class="clear">Clear All</span>
+        </div>
+        <form action="#" class="container__form">
+          <div class="form__box amount">
+            <label for="amount">Mortgage Amount</label>
+            <div class="input-field">
+              <input
+                type="text"
+                name="amount"
+                id="amount"
+              />
+              <span class="icon">$</span>
+            </div>
+            <span class="error-msg">
+              This field is required!
+            </span>
+          </div>
+          <div class="form wrapper">
+            <div class="form__box term">
+              <label for="term">Mortgage Term</label>
+              <div class="input-field">
+                <input
+                  type="number"
+                  name="term"
+                  id="term"
+                />
+                <span class="icon">years</span>
+              </div>
+              <span class="error-msg">
+                This field is required!
+              </span>
+            </div>
+            <div class="form__box rate">
+              <label for="rate">Interest Rate</label>
+              <div class="input-field">
+                <input
+                  type="number"
+                  name="rate"
+                  id="rate"
+                />
+                <span class="icon">%</span>
+              </div>
+              <span class="error-msg">
+                This field is required!
+              </span>
+            </div>
+          </div>
+          <div class="form__box type">
+            <span>Mortgage Type</span>
+            <input
+              type="radio"
+              name="type"
+              id="repayment"
+            />
+            <label for="repayment">Repayment</label>
+            <input
+              type="radio"
+              name="type"
+              id="interestOnly"
+            />
+            <label for="interestOnly">Interest Only</label>
+            <span class="error-msg">
+              This field is required!
+            </span>
+          </div>
+          <button type="button" class="form__submit">
+            <img
+              src="./assets/images/icon-calculator.svg"
+              alt="Calculator"
+            />
+            Calculate Repayments
+          </button>
+        </form>
+      </section>
+      <section class="container__results">
+        <div class="results__image">
+          <img
+            src="./assets/images/illustration-empty.svg"
+            alt="Mortgage Calculator"
+          />
+        </div>
+        <h1 class="results__title">Results shown here</h1>
+        <p class="results__text">
+          Complete the form and click “calculate repayments”
+          to see what your monthly repayments would be.
+        </p>
+      </section>
+      <section class="container__results">
+        <h1 class="results__title">Your results</h1>
+        <p class="results__text">
+          Your results are shown below based on the
+          information you provided. To adjust the results,
+          edit the form and click “calculate repayments”
+          again.
+        </p>
+        <div class="results__body">
+          <div class="monthly-box">
+            <h2 class="text">Your monthly repayments</h2>
+            <span class="monthly"></span>
+          </div>
+          <div class="total-box">
+            <h2 class="text">
+              Total you'll repay over the term
+            </h2>
+            <span class="total"></span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
