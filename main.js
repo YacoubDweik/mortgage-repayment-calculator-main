@@ -154,7 +154,7 @@ function handleLoanAmount(e) {
 }
 
 loanAmountField.addEventListener("keydown", (e) => {
-  if (e.key === ",") {
+  if (e.key === "," || e.currentTarget.value.length > 15) {
     e.preventDefault();
   }
 });
